@@ -1,58 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Today's Goals</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Goals</title>
 
-    <link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="style.css" />
 </head>
 <body>
+	
+	<header>
+		<h1>Today's Goals</h1>
+		<form id="new-goal-form">
+			<input 
+				type="text" 
+				name="new-goal-input" 
+				id="new-goal-input" 
+				placeholder="Enter a goal" />
+			<input 
+				type="submit"
+				id="new-goal-submit" 
+				value="Add goal" />
+		</form>
+	</header>
+	<main>
+		<section class="goal-list">
+			<h2>Goals</h2>
 
-    <header>
-        <h1>Today's Goals</h1>
-        <form id="new-goal-method">
-            <input 
-            type="text" 
-            id="new-goal-input" 
-            placeholder="What are your goals today?">
-            <input 
-            type="submit" 
-            id="new-goal-submit" 
-            value="Add goal">
+			<div id="goals">
 
-        </form>
-    </header>
+			</div>
+		</section>
+	</main>
 
-    <main>
-
-        <section class="goal-list">
-            <h2>Goals</h2>
-
-            <div id="goals">
-                <div class="goal">
-                    <div class="content">
-                        <input 
-                            type="text"
-                            class="text"
-                            value="My current goal"
-                            readonly
-
-                        >
-                    </div>
-                    <div class="actions">
-                        <button class="edit">Edit</button>
-                        <button class="delete">Delete</button>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-    </main>
-
-    <script src="main.js"></script>
-
+	<script src="main.js"></script>
 </body>
 </html>
